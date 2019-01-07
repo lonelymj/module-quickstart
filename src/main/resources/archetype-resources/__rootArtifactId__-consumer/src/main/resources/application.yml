@@ -1,0 +1,30 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+server:
+  port: 8080
+management: 8081
+demo:
+  service:
+    version: 1.0.0
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+spring:
+  application:
+    name: ${artifactId}
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+dubbo:
+  application:
+    id: ${artifactId}
+    name: ${artifactId}
+  protocol:
+    id: dubbo
+    name: dubbo
+  registry:
+    id: ${artifactId}-registry
+    address: nacos://127.0.0.1:8848
+

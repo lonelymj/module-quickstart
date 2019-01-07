@@ -1,0 +1,1 @@
+package ${package}.consumer.controller;
