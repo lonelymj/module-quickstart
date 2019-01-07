@@ -4,7 +4,7 @@
 
   <groupId>com.lgmn.archetype</groupId>
   <artifactId>module-quickstart</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.6</version>
   <packaging>maven-archetype</packaging>
 
   <name>module-quickstart</name>
