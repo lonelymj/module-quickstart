@@ -33,7 +33,7 @@ dubbo:
     id: ${artifactId}
     name: ${artifactId}
   scan:
-    basePackages: com.lgmn.${rootArtifactId}.__parentArtifactId__.provider.provider.service
+    basePackages: com.lgmn.${rootArtifactId}.provider.provider.service
 demo:
   service:
     version: 1.0.0
