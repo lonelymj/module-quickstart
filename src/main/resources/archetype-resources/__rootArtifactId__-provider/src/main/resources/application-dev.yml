@@ -34,7 +34,7 @@ dubbo:
     id: ${artifactId}-registry
     address: nacos://127.0.0.1:8848
   scan:
-    base-packages: com.lgmn.shandian.${rootArtifactId}.provider.provider.service
+    base-packages: com.lgmn.${rootArtifactId}.provider.service
   application:
     id: ${artifactId}
     name: ${artifactId}
